@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>CSS - Displays</title>
+
+        <style>
+            .box {
+                width: 50%;
+                height: 100px;
+            }
+
+            .box1 {
+                background: red;
+            }
+
+            .box2 {
+                background: blue;
+            }
+
+            #test{
+                width: 100px;
+                height: 100px; /*İşe yaramadı çünkü inline elementlere width-height verilmez.*/
+                display: inline-block; /*Bu sayede verdiğimiz boyutta bir bloğa sahip olacak ama yine de inline kalacak.*/
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="box box1"></div>
+        <div class="box box2"></div>
+        <a href="#" id="test" style="margin: 8px; background: chartreuse;">Test</a>
+        Deneme Content
+    </body>
+</html>

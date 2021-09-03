@@ -1,0 +1,23 @@
+/*
+h1 {
+    color: red;
+}
+
+#logo {
+    color: blue;
+}
+*/
+
+h1 {
+    color: red !important;
+}
+
+#logo {
+    color: blue;
+}
+
+/*
+Burada css çalışma hiyerarşimizin yukarıdan aşağıya olduğunu gördük. Her zaman en genel değeri yukarı ve en özel değeri
+aşağı yazmalıyız. İkinci kısımda isse belli bir değeri important yaparak onun en öncelikli değer olduğunu gördük. Bu
+sayede alttaki logo etiketi onu aşamadı.
+*/

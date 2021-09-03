@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Pseudo Class(State)</title>
+
+        <style>
+            /*selector:pseudo_class {}*/
+
+            a.fc {
+                color: white;
+                font-size: 1.5em;
+                display: inline-block;
+                background: blue;
+                padding: 10px;
+                text-decoration: none;
+                border-radius: 4px;
+            }
+            a.fc:hover {
+                color: blue;
+                background: white;
+                border: 1px solid blue;
+            }
+            a.bir {
+                font-size: 24px;
+            }
+            a.bir:link /*henüz tıklanmamış*/ {
+                color: green;
+            }
+            a.bir:visited /*tıklanmış*/ {
+                color: black;
+            }
+            a.bir:hover /*üzerine gelmek*/ {
+                color: red;
+            }
+            a.bir:active /*tıklarken*/ {
+                color: blue;
+            }
+            input {
+                font-size: 1.5em;
+                padding: 10px;
+                border-radius: 4px;
+                border: 1px solid black;
+            }
+            input:focus /*inputa tıklayınca (odaklanınca)*/ {
+                /*outline-color: blue;*/
+                outline: 0; /*outline'ı kapatır.*/
+                border: 2px solid red;
+            }
+        </style>
+    </head>
+
+    <body>
+        <a href="#" class="bir">This is a link</a>
+        <input type="text" placeholder="Name">
+        <a href="#1" class="fc">Facebook</a>
+    </body>
+</html>
+
+<!--Daha fazlası için her zaman w3schools.com!-->

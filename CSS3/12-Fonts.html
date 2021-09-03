@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>CSS - Fonts</title>
+
+        <style>
+            h1 {
+                font-family: Arial, Helvetica, sans-serif;
+                /*Burada bir cihazın uyumluluğunu göz önüne alırız. Arial fontu bir cihazda yoksa sonra Helvetica fontuna bakılır. Eğer o da yoksa cihazın default olan sans-serif fontu kullanılır. Fontları soldan sağa önceliğine göre dizmeli, en sona ise generic family bırakılır.*/
+            }
+
+            p {
+                font-size: 20px;
+                /*line-height: 1.5em;*/ /*font-size'ın 1.5 katı olacak.*/
+                line-height: 1.5rem; /*root element yani html'in 1.5 katı px alacak.*/
+                font-style: italic;
+                font-weight: bold;
+            }
+        </style>
+    </head>
+
+    <body>
+        <h1>Başlık 1</h1>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Placeat, voluptas officiis vel minus blanditiis ipsum quidem, est eveniet quia reiciendis officia accusamus quam non quo error dignissimos odio sunt maxime qui voluptates corrupti laudantium rem quod. Accusamus incidunt excepturi debitis repellendus ipsum harum inventore magnam at mollitia officiis! Iste, atque?</p>
+    </body>
+</html>
+
+<!--Generic Family: Ana Font Ailesidir. Serif, sans-serif ve monospace olarak 3 tanedirler.-->
+
+<!--Font Family: Generic Familyden bir türün alt fontlarıdır. Serif için Times New Roman ya da Georgia gibi.-->
+
+<!--Sans-Serif için ise Arial ve Verdana font-family örnek verilebilir.-->
+
+<!--Courier New ve Lucida Console is Monospace'in alt fontlarıdır.-->
+
+<!--Serif ailesinden fontlar harflerin uçlarında tırnaklı bitişler içerirken Sans-Serif ailesinde harfler düz bitişlidir.-->
+
+<!--Monospace ailesi ise her karakterin aynı width (genişlik) değerine sahip olduğu fontları içerir.-->
+
+<!--Önizlemeleri ile bir çok font görmek için Google Fonts sitesi idealdir.-->

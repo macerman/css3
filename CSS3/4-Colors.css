@@ -1,0 +1,26 @@
+h1, h2 {
+    color: red;
+    background-color: black;
+    font-size: 40px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+#h2 {
+    color: rgb(122, 200, 125);
+}
+
+#h3 {
+    color: rgba(250, 200, 50, 1); /*1 değeri alpha değeridir. Alttaki opacity ile aynı görevde.*/
+}
+
+#h4 {
+    color: rgb(25, 50, 100);
+    opacity: 0.5;
+    background: snow;
+}
+
+#h5 {
+    color: #289E74;
+}
+
+/* FF = 255 hexadecimal düzen */

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Responsive Units</title>
+
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+
+            /*html {
+                font-size: 10px;
+            }*/
+
+            /*div {
+                font-size: 1.5em;
+            }*/
+
+            /*p {
+                /*font-size: 1.5rem;*/ /*dive göre, div parent*/
+                /*font-size: 1.5em;*/
+                /*padding: 1.5em;*/ /*kendi elementimizin font-size'ına göre oranlanır...*/
+                /*font-size: 50%;
+            }*/
+
+            /*div {
+                width: 40vw;
+                height: 10vh;
+                background-color: #a7a7a7;
+            }*/
+
+            .background {
+                background: url("./images/bground.jpg") center center no-repeat;
+                background-size: cover;
+                height: 100vh;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                color: #fff;
+                padding: 10rem;
+            }
+
+            h1 {
+                margin-bottom: 1rem;
+                font-size: 3rem;
+            }
+
+            p {
+                font-size: 2rem;
+            }
+
+            /*Mobile*/
+            @media(max-width: 500px) {
+                h1 {
+                    margin-bottom: 0.5rem;
+                    font-size: 2rem;
+                }
+
+                p {
+                    font-size: 1rem;
+                }
+            }
+        </style>
+
+        <!--Responsive Units
+            em, rem, %, vw, vh
+        -->
+
+        <!--vw: viewport width - vh: viewport height-->
+        <!--viewport: sayfanın tamamı-->
+        <!--vw: x ekseni, vh: y ekseni (sayfa ekranının)-->
+        <!--Tüm genişlik = 100vw - Tüm uzunluk = 100vh-->
+    </head>
+    <body>
+        <div class="background">
+            <!--<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequatur, accusantium.</p>-->
+            <h1>Welcome to the Site</h1>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim, dolor.</p>
+        </div>
+    </body>
+</html>

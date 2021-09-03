@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Responsive Design - Media Queries</title>
+
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+
+            body {
+                background: red;
+            }
+
+            /*Paragrafımızın sadece masaüstünde gözükmesi için:*/
+            p.tek-masaüstü {
+                display: none;
+                color: white;
+            }
+
+            @media(min-width: 768px) {
+                p.tek-masaüstü {
+                    display: block;
+                }
+            }
+            
+            /*Tabletler İçin: 768px*/
+            @media(max-width: 768px) {
+                body {
+                    background: blue;
+                }
+            }
+
+            /*Telefonlar İçin: 500px*/
+            @media(max-width: 500px) {
+                body {
+                    background: green;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <!--Responsive Tasarım-->
+        <!--Aynı sayfanın bilgisayar, tablet veya telefon gibi cihazlarda farklı ekran boyutlarına adapte olmasını sağlar.-->
+        <!--Burada kullanacağımız komuta Media Query denir.-->
+        <p class="tek-masaüstü">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, tempore?</p>
+    </body>
+</html>

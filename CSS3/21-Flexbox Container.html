@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>FLEXBOX - CONTAINER</title>
+
+        <style>
+            * {
+                padding: 0;
+                margin: 0;
+                box-sizing: border-box;
+            }
+            .container {
+                width: 75%;
+                min-height: 600px; /*content taşmasın diye geniişleyebilsin*/
+                margin: 0 auto;
+                display: flex;
+                justify-content: flex-start; /*main-axiste itemlerin yerini containerın başından başlatır, default*/
+                /*justify-content: flex-end;*/ /*main-axiste itemlerin yerini containerın sonundan başlatır*/
+                /*justify-content: center;*/ /*main-axiste itemleri ortaya koyar*/
+                /*justify-content: space-evenly;*/ /*main-axiste itemlerin her yanında eşit boşluk ayarlar*/
+                /*justify-content: space-between;*/ /*main axiste itemlerin arasını eşit boşlukla dizer*/
+                /*justify-content: space-around;*/ /*main-axiste itemlerin container ile aralarına belli bir mesafe koyar, kendi aralarına ise bunun iki katını koyar*/
+                flex-direction: row; /*itemleri yan yana sıralar, default*/
+                /*flex-direction: column;*/ /*itemleri alt alta sıralar*/
+                align-items: stretch; /*itemin heightini cross-axisin heighti kadar uzun tutar, default*/
+                /*align-items: center;*/ /*itemin height değişkenini cross axiste ortalar ve içerik kadar tutar*/
+                /*align-items: flex-start;*/ /*itemin height değişkenini cross axisin başında içeriği kadar tutar*/
+                /*align-items: flex-end;*/ /*itemin height değişkenini cross axisin sonunda içeriği kadar tutar*/
+                flex-wrap: nowrap; /*item sığmıyorsa widthi düşürüp sığdır, default*/
+                /*flex-wrap: wrap;*/ /*sığmayan itemi aşağıya atacak ve satır biterse yine alta geçer gerekse taşar*/
+                background: black;
+            }
+            .box {
+                text-align: center;
+                background: #f2f2f2;
+                width: 200px;
+                height: 200px;
+                border: 1px solid black;
+                margin: 10px;
+            }
+        </style>
+    </head>
+    <body>
+        
+        <!-- Flex Container -->
+
+        <div class="container">
+            <div class="box">
+                <h1>Article 1</h1>
+                <p>Lorem ipsum dolor sit amet.</p>
+            </div>
+            <div class="box">
+                <h1>Article 2</h1>
+                <p>Lorem ipsum dolor sit amet.</p>
+            </div>
+            <div class="box">
+                <h1>Article 3</h1>
+                <p>Lorem ipsum dolor sit amet.</p>
+            </div>
+        </div>
+
+    </body>
+</html>
